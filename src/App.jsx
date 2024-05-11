@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { getEnvelopCoverRotate, getEnvelopTranslate } from './data/envelop';
 import { getLetterScale } from './data/letter';
 import { getImageRoseTranslate, getImagePenTranslate } from './data/image';
-import { getBackgroundColor } from './data/bg';
+import { getBackgroundColor, getHelloTranslate } from './data/bg';
 import './App.css';
 
 function App() {
@@ -26,6 +26,11 @@ function App() {
         <div className="page" style={getBackgroundColor(scrollY)}>
           <img className="rose" style={getImageRoseTranslate(scrollY)} src="img/rose.png" alt="rose" />
           <img className="pen" style={getImagePenTranslate(scrollY)} src="img/pen.png" alt="pen" />
+          <view className="hello" style={getHelloTranslate(scrollY)}>
+            <h1 className="title">您好，世界上最伟大的妈妈：</h1>
+            <p className="content">您亲爱的好大儿给你寄了一封贺卡</p>
+            <p className="subtitle">请下滑查收！</p>
+          </view>
           <div className="letter" style={getLetterScale(scrollY)}>
             <div className="title">妈妈：母亲节快乐！</div>
             <div className="subtitle">妈妈是全世界最好的妈妈（骄傲脸）</div>

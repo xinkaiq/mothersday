@@ -1,7 +1,7 @@
 import { getEnvelopTranslateValue } from "./envelop";
 
 const TO = [240, 128, 128];
-const FROM = [211, 211, 211];
+const FROM = [41, 36, 33];
 const INTERVAL = 500;
 
 
@@ -18,5 +18,12 @@ export function getBackgroundColor(scrollY) {
     const color = scrollY <= envelopMove + 600 ? FROM : getColor(scrollY - envelopMove - 600);
     return {
         'background-color': `rgb(${color[0]}, ${color[1]}, ${color[2]})`
+    }
+}
+
+
+export function getHelloTranslate(scrollY) {
+    return {
+        'transform': `translate(-50%, ${scrollY}px)`
     }
 }

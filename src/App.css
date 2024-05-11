@@ -55,6 +55,15 @@
   justify-content: center;  
 }
 
+.hello {
+  width: 600px;
+  position: fixed;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: white;
+}
+
 svg {
   overflow: visible;
 }
