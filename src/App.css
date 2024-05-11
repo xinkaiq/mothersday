@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  height: 500vh;
 }
 
 .App-logo {
@@ -36,3 +37,114 @@
     transform: rotate(360deg);
   }
 }
+
+
+.page-container {
+  width: 100vw;
+  height: 500vh;
+}
+
+.page {
+  position: sticky;
+  top: 0;
+  background-color: lightgray;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;  
+}
+
+svg {
+  overflow: visible;
+}
+.envelop {
+  position: relative;
+  top: -200px;
+	overflow: visible;
+  height: 200px;
+  width: 400px;
+  z-index: 0;
+}
+.envelop .adjust-svg {
+  left: 0;
+}
+.envelop .background {
+  position: absolute;
+  z-index: 1;
+}
+.envelop .border {
+  position: absolute;
+  z-index: 3;
+}
+.envelop .cover {
+  position: absolute;
+  z-index: 4;
+}
+.letter-inside {
+  width: 300px;
+  height: 180px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background-color: antiquewhite;
+  border-radius: 5px;
+}
+.letter {
+  width: 300px;
+  height: 180px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background-color: antiquewhite;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-sizing: border-box;
+  border: 10px pink solid;
+  font-weight: bold;
+  color: lightcoral;
+}
+.letter .subtitle {
+  font-size: 8px;
+  color: gray;
+}
+.letter .footer {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 8px;
+  color: gray;
+}
+.rose {
+  position: fixed;
+  top: -680px;
+  right: -680px;
+}
+.pen {
+  position: fixed;
+  bottom: 0;
+  left: -640px;
+}
+
+.triangle-svg {
+  position: relative;
+  top: -200px;
+	overflow: visible;
+}
+
+.triangle {
+  fill: pink;
+}
+
+.cover {
+	transition: all linear 0.1s;
+}
+
